@@ -4,17 +4,17 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Set up the chart
-beers=['Abbot Ale', 'London Pride', 'Websters', 'Tetley']
+beers=['Abbot Ale', 'London Pride', 'Websters', 'Tetley', 'Fosters']
 
 bitterness = go.Bar(
     x=beers,
-    y=[35, 60, 85, 75],
+    y=[35, 60, 85, 75, 20],
     name='IBU',
-    marker={'color':'pruple'}
+    marker={'color':'purple'}
 )
 alcohol = go.Bar(
     x=beers,
-    y=[5.2, 4.8, 3.8, 3.2],
+    y=[5.2, 4.8, 3.8, 3.2, 3],
     name='ABV',
     marker={'color':'blue'}
 )
